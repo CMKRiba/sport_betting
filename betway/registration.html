@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "registration-style.css">
+    
+</head>
+<body>    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-black py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/core-devs.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">Sporter's Bet</span>
+            </a>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "../signin.html">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "../login_options/index.html">Soccer</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "../login_options/netball.html">Netball</a>
+                    </li>
+                    <!--<li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#blogs"></a>
+                    </li>-->
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white" href = "../login_options/rugby.html">Rugby</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-white" href = "../signin.html">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="innerContainer">
+            <div class="title">
+                <h1>sign up now!</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentContainer">
+        <div class="innerContainer">
+                <form id="regristation" action="../signin.html" method="POST">
+                    <div class="heading">
+                        <h2>Registration form</h2>
+                    </div>
+                    <div class="first">
+                        <label for="first">first name:</label>
+                        <div class="clear"></div>
+                        <input type="text" name="first name" id="firstName" placeholder="enter first name" required>
+                    </div>
+                    <div class="last">
+                        <label for="last">last name:</label>
+                        <div class="clear"></div>
+                        <input type="text" name="last name" id="lastName" placeholder="enter last name" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">e-mail:</label>
+                        <div class="clear"></div>
+                        <input type="email" name="email" id="email" placeholder="enter email" required>
+                    </div>
+                    <div class="PhoneNumber">
+                        <label for="PhoneNumber">Phone Number:</label>
+                        <div class="clear"></div>
+                        <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Phone number" required>
+                    </div>
+                    <div class="pass">
+                        <label for="pass">password:</label>
+                        <div class="clear"></div>
+                        <input type="password" name="pass" id="pass" placeholder="enter password" required>
+                    </div>
+                    <div class="cpass">
+                        <label for="Cpass">confirm password:</label>
+                        <div class="clear"></div>
+                        <input type="password" name="pass" id="cpass" placeholder="enter again password" required>
+                    </div>
+                    <div class="submit">
+                        <button id="btnSubmit" class="btn btnSubmit">Submit</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+    <!--<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Core Devs Sports Betting</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Betting</h4>
+                    <ul>
+                        <li><a href="#">Soccer</a></li>
+                        <li><a href="#">Netball</a></li>
+                        <li><a href="#">Rugby</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>-->
+    
+    <!-- footer-->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Sporter's Bet</a>
+                    <p class = "text-white text-muted mt-3">Sporter's Bet is an online betting site</p>                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Weekend games
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            19 Armeshof Street, Braamfontein, 13th Floor Hollard building, Johannesburg
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            sports.support@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +21 748 473 297
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end of footer-->
+
+    <!-- jquery -->
+    <!--<script src = "js/jquery-3.6.0.js"></script>-->
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "./js/registration.js"></script>
+    <!--<script src = "./javascript/registration.js"></script>-->
+</body>
+</html>

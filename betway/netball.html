@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>NETBALL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/footer-style.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+        <div class="head desktop">
+            <div>
+                <img src="images/core-devs.png" alt="logo" class="logo">
+            </div>
+            <a class="soccer" href="./index.html">Soccer</a>
+            <a class="netball" href="./netball.html">Netball</a>
+            <a class="rugby" href="./rugby.html">RUGBY</a>
+            <a href="../deposit.html" class="log"><h2>Balance: R <span id="currBalance" onload="currentBalance()" required>00</span></h2></a>
+            <a href="../signin.html" class="sign">Sign Out</a>
+        </div>
+    </header>
+
+    <!--Log-->
+    <input type="checkbox" id="show">
+    <label for="show" class="show-btn">Log Table</label>
+
+    <div class="container1">
+
+        <div class="table-box">
+            <div class="table-row table-head">
+                <div class="table-cell first-cell">
+                    <p>Club</p>
+                </div>
+                <div class="table-cell">
+                    <p>Match played</p>
+                </div>
+                <div class="table-cell last-cell">
+                    <p>Points</p>
+                </div> 
+            </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Jaguars</p>
+            </div>
+            <div class="table-cell">
+                <p>5</p>
+            </div>
+            <div class="table-cell last-cell">
+               <p>8</p>
+            </div>   
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Kingdom Stars</p>
+            </div>
+            <div class="table-cell">
+                <p>4</p>
+            </div>
+            <div class="table-cell last-cell">
+               <p>7</p>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Aloes</p>
+            </div>
+            <div class="table-cell">
+                <p>4</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>7</p>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Stings</p>
+            </div>
+            <div class="table-cell">
+                <p>3</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>6</p>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Crinums</p>
+            </div>
+            <div class="table-cell">
+                <p>4</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>4</p>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Flames</p>
+            </div>
+            <div class="table-cell">
+                <p>5</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>4</p>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>SunBirds</p>
+            </div>
+            <div class="table-cell">
+                <p>4</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>2</p>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>Fireballs</p>
+            </div>
+            <div class="table-cell">
+                <p>5</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!--Netball-->
+    <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Netball MATCHES</h2>
+            </div>
+ 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="products row">
+                    <div class="card my-2 p-3 col-md-4">
+                        <div class="product__image">
+                            <img src="images/stings.jfif" alt="">
+                        </div>
+                        <h2 class="product__title">STINGS</h2>
+                        <h3 class="product__price">Win</h3>
+                        <button class="btn btn-primary">Home</button>
+                    </div>
+                    <div class=" card my-2 p-3 col-md-4">
+                        <div class="product__image">
+                            <h1>VS</h1>
+                        </div>
+                        <h2 class="product__title"></h2>
+                        <h3 class="product__price">Draw</h3>
+                        <button class="btn btn-primary"></button>
+                    </div>
+                    <div class=" card my-2 p-3 col-md-4">
+                        <div class="product__image">
+                            <img src="images/jaguars.png" alt="">
+                        </div>
+                        <h2 class="product__title">JAGUARS</h2>
+                        <h3 class="product__price">Win</h3>
+                        <button class="btn btn-primary">Away</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 p-3 rounded bg-white">
+            <div class="col-md-12">
+                <h2>TEAMS</h2>
+                <hr>
+                <div class="row cart__items">
+                     <div class="col-md-4 mb-4">
+                        <h3 class="">Stings</button>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="qty">2</div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <button class="btn btn-danger">Delete</button>
+                    </div> 
+                    
+                </div>
+                <div class="row total__price"></div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+     <!--Log-->
+    <h2>ODDS CALCULATOR</h2>
+    <br>
+            <form>
+                <label for="probability">Probability (%)</label>
+                <input type="number" id="probability" step="0.01" required>
+                <label for="betAmount">Bet Amount (R)</label>
+                <input type="number" id="betAmount" required>
+                <button type="button" onclick="calculateOdds()">Calculate Odds</button>
+            </form>
+            <div class="result-container">
+                <h5>Results:</h5>
+                <p>Decimal Odds: <span id="decimalOdds"></span></p>
+                <p>Payout: <span id="payout"></span></p>
+                <p>Profit: <span id="profit"></span></p>
+            </div>
+
+    <div class="WithdrawalSubmitCol">
+        <div class="submitWithdrawal">
+            <h4>Amount</h4>
+            <input id="withdrawalAmount" type="number" class="form-control" placeholder="Enter amount" required><br>
+            <button id="PayButton" class="btn btn-block btn-success submit-button" onclick="withdraw()"type="submit">
+                <span class="submit-button-lock"></span>
+                <span class="align-middle">Bet</span>
+            </button>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Core Devs Sports Betting</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Betting</h4>
+                    <ul>
+                        <li><a href="./index.html">Soccer</a></li>
+                        <li><a href="./netball.html">Netball</a></li>
+                        <li><a href="./rugby.html">Rugby</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        
+        //function currentBalance(){
+        //let tot = localStorage.getItem("Total");
+        function calculateOdds() {
+        var probability = parseFloat(document.getElementById("probability").value);
+        var betAmount = parseFloat(document.getElementById("betAmount").value);
+        var decimalOdds = (1 / (probability / 100)).toFixed(2);
+        var payout = (betAmount * decimalOdds).toFixed(2);
+        var profit = (payout - betAmount).toFixed(2);
+        document.getElementById("decimalOdds").innerHTML = decimalOdds;
+        document.getElementById("payout").innerHTML = "R" + payout;
+        document.getElementById("profit").innerHTML = "R" + profit;
+    }
+         
+        const withdraw_btn = document.getElementById('PayButton');
+        withdraw_btn.addEventListener('click', function(){
+        const withdrawTotal = getInputNumb("withdrawalAmount");
+    
+          //updateSpanTest("currWithdraw", withdrawTotal);
+          updateSpanTest("currBalance", -1 * withdrawTotal);
+          //setting up the input field blank when clicked
+          document.getElementById('withdrawalAmount').value = "";
+      })
+      //function to parse string input to int
+      function getInputNumb(idName){
+          const amount = document.getElementById(idName).value;
+          const amountTotal = parseFloat(amount);
+          return amountTotal;
+      }
+    
+      function updateSpanTest(idName, addedNumber){
+          //x1.1 updating balance the same way
+          const currentAmount = document.getElementById(idName).innerText;
+          const currentStringToInt = parseFloat(currentAmount);
+    
+          const total = currentStringToInt + addedNumber;
+          localStorage.setItem("Total", total);
+    
+          //x1.2 setting this value in balance
+          document.getElementById(idName).innerText = total;
+      }
+       // debugger;
+        document.getElementById("currBalance").innerText = localStorage.getItem("Total");
+        function currentBalance(){
+        //let tot = localStorage.getItem("Total");
+        //debugger;
+        document.getElementById("currBalance").innerText = localStorage.getItem("Total");
+        }
+        window.onload = currentBalance();
+    
+        </script>
+  </body>
+</html>
